@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app id="teamsac-admin" version="2.4">
+
+	<distributable />
+
+	<display-name>teamsac-public</display-name>
+	
+	<filter>
+		<filter-name>HibernateFilter</filter-name>
+		<display-name>Hibernate Filter</display-name>
+		<description></description>
+		<filter-class>org.teamsacramento.web.HibernateFilter</filter-class>
+	</filter>
+	
+	<!--filter>
+		<filter-name>SacLocationFilter</filter-name>
+		<display-name>Sacramento Location Filter</display-name>
+		<description></description>
+		<filter-class>org.teamsacramento.web.SacLocationFilter</filter-class>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>SacLocationFilter</filter-name>
+		<url-pattern>/sacramento.html</url-pattern>
+	</filter-mapping-->
+	
+	<filter-mapping>
+		<filter-name>HibernateFilter</filter-name>
+		<url-pattern>*.jsp</url-pattern>
+	</filter-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	
+	<error-page>
+		<error-code>500</error-code>
+		<location>/error.html</location>
+	</error-page>
+	
+	<error-page>
+		<error-code>404</error-code>
+		<location>/404.html</location>
+	</error-page>
+	
+</web-app>
