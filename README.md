@@ -1,4 +1,5 @@
 # Team Sacramento Judo Website
+![Team Sacramento Judo](img/rhodes-luz-splash.jpg)
 
 This pom.xml defines the structure of Team Sacramento's Website beginning June, 17, 2026.
 
