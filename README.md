@@ -7,7 +7,6 @@ This pom.xml defines the structure of Team Sacramento's Website beginning June, 
 | File | Description |
 |------|-------------|
 | `teamsacramento.jar` | Pre-built executable JAR (Java 21) |
-| `Main.java` | CLI entry point, argument parsing |
 | `Test.java` | JUnit 5 unit tests |
 | `pom.xml` | Maven build file |
 
