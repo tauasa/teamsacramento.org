@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Weekly class schedule for Team Sacramento Judo." />
+  <title>Schedule | Team Sacramento Judo</title>
+  <link rel="icon" type="image/png" href="images/rhodes-luz-splash.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="schedule">
+
+  <header class="nav">
+    <div class="container nav__bar">
+      <a href="index.html" class="nav__brand">
+        <span class="stamp nav__stamp" aria-hidden="true"><img src="images/logos/konjo120.png"/></span>
+        <span class="nav__wordmark">Team Sacramento<br /><strong>Judo</strong></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <div class="nav__dropdown">
+          <button type="button" class="nav__link nav__link--trigger" data-nav="home-trigger" aria-expanded="false" aria-haspopup="true">
+            Home
+            <svg class="nav__caret" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M0 0L5 6L10 0Z" fill="currentColor"/></svg>
+          </button>
+          <ul class="nav__submenu">
+            <li><a href="about.html" class="nav__submenu-link" data-nav="about">About Us</a></li>
+            <li><a href="history.html" class="nav__submenu-link" data-nav="history">History</a></li>
+            <li><a href="coaches.html" class="nav__submenu-link" data-nav="coaches">Coaches</a></li>
+          </ul>
+        </div>
+        <a href="schedule.html" class="nav__link" data-nav="schedule">Schedule</a>
+        <a href="news.html" class="nav__link" data-nav="news">News</a>
+        <a href="join.html" class="nav__link nav__link--cta" data-nav="join">How do I join?</a>
+      </nav>
+
+      <button type="button" class="nav__hamburger" aria-expanded="false" aria-label="Toggle menu" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav id="mobile-menu" class="nav__mobile" aria-label="Primary">
+      <div>
+        <button type="button" class="nav__mobile-link nav__mobile-link--trigger" aria-expanded="false">
+          Home
+          <svg class="nav__caret" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M0 0L5 6L10 0Z" fill="currentColor"/></svg>
+        </button>
+        <ul class="nav__mobile-submenu">
+          <li><a href="about.html" class="nav__mobile-link" data-nav="about">About Us</a></li>
+          <li><a href="history.html" class="nav__mobile-link" data-nav="history">History</a></li>
+          <li><a href="coaches.html" class="nav__mobile-link" data-nav="coaches">Coaches</a></li>
+        </ul>
+      </div>
+      <a href="schedule.html" class="nav__mobile-link" data-nav="schedule">Schedule</a>
+      <a href="news.html" class="nav__mobile-link" data-nav="news">News</a>
+      <a href="join.html" class="nav__mobile-link nav__mobile-link--cta" data-nav="join">How do I join?</a>
+    </nav>
+  </header>
+
+  <main>
+    <header class="page-header">
+      <div class="container">
+        <p class="eyebrow eyebrow--on-dark">Weekly classes</p>
+        <h1>Schedule</h1>
+        <p class="page-header__lede">
+          All classes meet at our Sacramento dojo. New students should arrive 15 minutes early
+          for their first class.
+        </p>
+      </div>
+    </header>
+
+    <!--
+      NOTE for Tui: replace with the real weekly schedule - sample times
+      below just establish the table structure and styling.
+    -->
+    <section class="section">
+      <div class="container">
+        <div class="schedule-table">
+          <div class="schedule-row schedule-row--head">
+            <span>Day</span>
+            <span>Time</span>
+            <span>Class</span>
+            <span>Ages</span>
+          </div>
+          <div class="schedule-row">
+            <span class="schedule-row__day">Tuesday</span>
+            <span>5:30 - 8:00 PM</span>
+            <span>Beginning and Advanced Judo</span>
+            <span>All ages</span>
+          </div>
+          <div class="schedule-row">
+            <span class="schedule-row__day">Thursday</span>
+            <span>5:30 - 8:00 PM</span>
+            <span>Beginning and Advanced Judo</span>
+            <span>All ages</span>
+          </div>
+          <div class="schedule-row">
+            <span class="schedule-row__day">Friday</span>
+            <span>6:30 - 8:00 PM</span>
+            <span>Open Mat / Randori</span>
+            <span>All ranks</span>
+          </div>
+          <div class="schedule-row">
+            <span class="schedule-row__day">Saturday</span>
+            <span>10:00 - 12:30 PM</span>
+            <span>Advanced Competition Judo</span>
+            <span>By invitation</span>
+          </div>
+        </div>
+
+        <p class="schedule-note">
+          Schedule subject to change for tournaments and holidays - check the
+          <a href="news.html">News</a> page for updates.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--dim">
+      <div class="container cta-row">
+        <div>
+          <h2>First time on the mat?</h2>
+          <p>Bring loose athletic clothes - no judogi required for your trial class.</p>
+        </div>
+        <a href="join.html" class="btn btn--primary">How do I join?</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <span class="stamp" aria-hidden="true">TSJ</span>
+        <div>
+          <p class="footer__name">Team Sacramento Judo</p>
+          <p class="footer__tag">3079 Kilgore Road, Suite A</p>
+          <p class="footer__tag">Rancho Cordova, CA 95670</p>
+        </div>
+      </div>
+
+      <nav class="footer__links" aria-label="Footer">
+        <a href="about.html">About Us</a>
+        <a href="history.html">History</a>
+        <a href="coaches.html">Coaches</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="news.html">News</a>
+        <a href="join.html">How do I join?</a>
+      </nav>
+
+      <div class="footer__contact">
+        <p class="eyebrow">On the mat</p>
+        <p>
+          Questions before your first class?<br />
+          <a href="join.html" class="footer__contact-link">Send us a message</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>&copy; <span id="copyright-year">2026</span> Team Sacramento Judo. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

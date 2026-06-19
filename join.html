@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="How to join Team Sacramento Judo - trial classes, judogi, and membership." />
+  <title>How Do I Join? | Team Sacramento Judo</title>
+  <link rel="icon" type="image/png" href="images/rhodes-luz-splash.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="join">
+
+  <header class="nav">
+    <div class="container nav__bar">
+      <a href="/index.html" class="nav__brand">
+        <span class="stamp nav__stamp" aria-hidden="true"><img src="images/logos/konjo120.png"/></span>
+        <span class="nav__wordmark">Team Sacramento<br /><strong>Judo</strong></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <div class="nav__dropdown">
+          <button type="button" class="nav__link nav__link--trigger" data-nav="home-trigger" aria-expanded="false" aria-haspopup="true">
+            Home
+            <svg class="nav__caret" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M0 0L5 6L10 0Z" fill="currentColor"/></svg>
+          </button>
+          <ul class="nav__submenu">
+            <li><a href="about.html" class="nav__submenu-link" data-nav="about">About Us</a></li>
+            <li><a href="history.html" class="nav__submenu-link" data-nav="history">History</a></li>
+            <li><a href="coaches.html" class="nav__submenu-link" data-nav="coaches">Coaches</a></li>
+          </ul>
+        </div>
+        <a href="schedule.html" class="nav__link" data-nav="schedule">Schedule</a>
+        <a href="news.html" class="nav__link" data-nav="news">News</a>
+        <a href="join.html" class="nav__link nav__link--cta" data-nav="join">How do I join?</a>
+      </nav>
+
+      <button type="button" class="nav__hamburger" aria-expanded="false" aria-label="Toggle menu" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav id="mobile-menu" class="nav__mobile" aria-label="Primary">
+      <div>
+        <button type="button" class="nav__mobile-link nav__mobile-link--trigger" aria-expanded="false">
+          Home
+          <svg class="nav__caret" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M0 0L5 6L10 0Z" fill="currentColor"/></svg>
+        </button>
+        <ul class="nav__mobile-submenu">
+          <li><a href="about.html" class="nav__mobile-link" data-nav="about">About Us</a></li>
+          <li><a href="history.html" class="nav__mobile-link" data-nav="history">History</a></li>
+          <li><a href="coaches.html" class="nav__mobile-link" data-nav="coaches">Coaches</a></li>
+        </ul>
+      </div>
+      <a href="schedule.html" class="nav__mobile-link" data-nav="schedule">Schedule</a>
+      <a href="news.html" class="nav__mobile-link" data-nav="news">News</a>
+      <a href="join.html" class="nav__mobile-link nav__mobile-link--cta" data-nav="join">How do I join?</a>
+    </nav>
+  </header>
+
+  <main>
+    <header class="page-header">
+      <div class="container">
+        <p class="eyebrow eyebrow--on-dark">Get started</p>
+        <h1>How do I join?</h1>
+        <p class="page-header__lede">Three steps from curious to club member.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container">
+        <ol class="steps">
+          <li class="step">
+            <span class="step__number">01</span>
+            <div>
+              <h3>Come watch or try a free class</h3>
+              <p>Show up a few minutes before any class on the Schedule page. Your first class
+                is free and no judogi is required - just loose, comfortable clothes.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__number">02</span>
+            <div>
+              <h3>Get fitted for a judogi</h3>
+              <p>Once you're ready to join, we'll help you order the right size judogi
+                (uniform). Loaner gis are available for your first few weeks.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__number">03</span>
+            <div>
+              <h3>Register and set up dues</h3>
+              <p>Fill out a membership form and set up monthly dues. From there, you're
+                officially part of the club - belt testing and tournaments included.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--dim">
+      <div class="container form-layout">
+        <div class="form-intro">
+          <p class="eyebrow">Questions first?</p>
+          <h2>Send us a message</h2>
+          <p>
+            Tell us a little about who's joining - age, experience level, which class times
+            work for you - and we'll get back to you with next steps.
+          </p>
+          <p class="field__hint">
+            This form opens your email app with everything filled in - nothing is sent from
+            this page directly. Prefer to write it yourself? Email us at
+            <a href="mailto:info@teamsacramento.org">info@teamsacramento.org</a>.
+          </p>
+        </div>
+
+        <form class="card contact-form" id="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name" autocomplete="name" required />
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" autocomplete="email" required />
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone <span class="field__optional">(optional)</span></label>
+            <input id="phone" type="tel" name="phone" autocomplete="tel" />
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary">Send message</button>
+
+          <p id="form-status" class="form-status form-status--success" role="status"></p>
+
+          <noscript>
+            <p class="field__hint">
+              JavaScript is off, so this form can't pre-fill an email for you - please email us
+              directly at <a href="mailto:info@teamsacramento.org">info@teamsacramento.org</a>
+              instead.
+            </p>
+          </noscript>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <span class="stamp" aria-hidden="true">TSJ</span>
+        <div>
+          <p class="footer__name">Team Sacramento Judo</p>
+          <p class="footer__tag">3079 Kilgore Road, Suite A</p>
+          <p class="footer__tag">Rancho Cordova, CA 95670</p>
+        </div>
+      </div>
+
+      <nav class="footer__links" aria-label="Footer">
+        <a href="about.html">About Us</a>
+        <a href="history.html">History</a>
+        <a href="coaches.html">Coaches</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="news.html">News</a>
+        <a href="join.html">How do I join?</a>
+      </nav>
+
+      <div class="footer__contact">
+        <p class="eyebrow">On the mat</p>
+        <p>
+          Questions before your first class?<br />
+          <a href="join.html" class="footer__contact-link">Send us a message</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>&copy; <span id="copyright-year">2026</span> Team Sacramento Judo. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
