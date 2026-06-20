@@ -181,6 +181,10 @@ textarea:focus-visible {
   flex-shrink: 0;
 }
 
+.footer-konjo {
+  width: 70px;
+}
+
 .photo-frame {
   position: relative;
   background: var(--mat-blue-deep);
